@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="charset" content="utf-8" />
+        <title>{{title}}</title>
+        {{#if($page.env!=='prod')}}
+        <meta name="data-spm" content="a1z4fy">
+        {{else}}
+        <meta name="data-spm" content="a212tz">
+        {{/if}}
+        <title>Alinode Insight</title>
+            {{#if($page.env==='local')}}
+                <script src="//g.alicdn.com/alilog/mlog/aplus_v2.js"></script>
+            {{/if}}
+        <link href="{{publicPath}}css/index.css" rel="stylesheet">
+    </head>
+    </head>
+    <body data-spm='21103593'>
+        <div id="alinode-container"></div>
+        <script id="initialize">
+            window.publicPath = '{{publicPath}}';
+            window.dep='{{udep}}';
+            window.CONFIG_REGION={
+                label: '{{region.label}}',
+                value: '{{region.value}}',
+            };
+            window.GLOBAL_CONFIG = {
+                routerPrefix: '{{config.apiPrefix}}',
+                deployType: '{{config.deployType}}',
+            }
+        </script>
+        <script src="{{publicPath}}js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,210 @@
+[
+  {
+    "name": "Process Start",
+    "start": 1615987661426,
+    "end": 1615987664868,
+    "duration": 3442,
+    "pid": 42127,
+    "index": 0
+  },
+  {
+    "name": "Application Start",
+    "start": 1615987664870,
+    "end": 1615987668009,
+    "duration": 3139,
+    "pid": 42127,
+    "index": 1
+  },
+  {
+    "name": "Load Plugin",
+    "start": 1615987664881,
+    "end": 1615987665267,
+    "duration": 386,
+    "pid": 42127,
+    "index": 2
+  },
+  {
+    "name": "Load Config",
+    "start": 1615987665267,
+    "end": 1615987665523,
+    "duration": 256,
+    "pid": 42127,
+    "index": 3
+  },
+  {
+    "name": "Require(0) config/config.default.ts",
+    "start": 1615987665268,
+    "end": 1615987665438,
+    "duration": 170,
+    "pid": 42127,
+    "index": 4
+  },
+  {
+    "name": "Require(1) config/config.local.ts",
+    "start": 1615987665439,
+    "end": 1615987665497,
+    "duration": 58,
+    "pid": 42127,
+    "index": 5
+  },
+  {
+    "name": "Require(2) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-session/config/config.default.js",
+    "start": 1615987665497,
+    "end": 1615987665498,
+    "duration": 1,
+    "pid": 42127,
+    "index": 6
+  },
+  {
+    "name": "Require(3) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+    "start": 1615987665499,
+    "end": 1615987665499,
+    "duration": 0,
+    "pid": 42127,
+    "index": 7
+  },
+  {
+    "name": "Require(4) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-jsonp/config/config.default.js",
+    "start": 1615987665500,
+    "end": 1615987665500,
+    "duration": 0,
+    "pid": 42127,
+    "index": 8
+  },
+  {
+    "name": "Require(5) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-onerror/config/config.default.js",
+    "start": 1615987665501,
+    "end": 1615987665501,
+    "duration": 0,
+    "pid": 42127,
+    "index": 9
+  },
+  {
+    "name": "Require(6) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js",
+    "start": 1615987665501,
+    "end": 1615987665502,
+    "duration": 1,
+    "pid": 42127,
+    "index": 10
+  },
+  {
+    "name": "Require(7) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-schedule/config/config.default.js",
+    "start": 1615987665502,
+    "end": 1615987665502,
+    "duration": 0,
+    "pid": 42127,
+    "index": 11
+  },
+  {
+    "name": "Require(8) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
+    "start": 1615987665503,
+    "end": 1615987665503,
+    "duration": 0,
+    "pid": 42127,
+    "index": 12
+  },
+  {
+    "name": "Require(9) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
+    "start": 1615987665504,
+    "end": 1615987665504,
+    "duration": 0,
+    "pid": 42127,
+    "index": 13
+  },
+  {
+    "name": "Require(10) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-static/config/config.default.js",
+    "start": 1615987665504,
+    "end": 1615987665505,
+    "duration": 1,
+    "pid": 42127,
+    "index": 14
+  },
+  {
+    "name": "Require(11) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view/config/config.default.js",
+    "start": 1615987665505,
+    "end": 1615987665506,
+    "duration": 1,
+    "pid": 42127,
+    "index": 15
+  },
+  {
+    "name": "Require(12) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view-xtpl/config/config.default.js",
+    "start": 1615987665506,
+    "end": 1615987665507,
+    "duration": 1,
+    "pid": 42127,
+    "index": 16
+  },
+  {
+    "name": "Require(13) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "start": 1615987665508,
+    "end": 1615987665509,
+    "duration": 1,
+    "pid": 42127,
+    "index": 17
+  },
+  {
+    "name": "Require(14) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
+    "start": 1615987665513,
+    "end": 1615987665519,
+    "duration": 6,
+    "pid": 42127,
+    "index": 18
+  },
+  {
+    "name": "Require(15) config/config.default.ts",
+    "start": 1615987665520,
+    "end": 1615987665520,
+    "duration": 0,
+    "pid": 42127,
+    "index": 19
+  },
+  {
+    "name": "Require(16) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.local.js",
+    "start": 1615987665520,
+    "end": 1615987665521,
+    "duration": 1,
+    "pid": 42127,
+    "index": 20
+  },
+  {
+    "name": "Require(17) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view/config/config.local.js",
+    "start": 1615987665521,
+    "end": 1615987665521,
+    "duration": 0,
+    "pid": 42127,
+    "index": 21
+  },
+  {
+    "name": "Require(18) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view-xtpl/config/config.local.js",
+    "start": 1615987665522,
+    "end": 1615987665522,
+    "duration": 0,
+    "pid": 42127,
+    "index": 22
+  },
+  {
+    "name": "Require(19) /Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.local.js",
+    "start": 1615987665522,
+    "end": 1615987665523,
+    "duration": 1,
+    "pid": 42127,
+    "index": 23
+  },
+  {
+    "name": "Require(20) config/config.local.ts",
+    "start": 1615987665523,
+    "end": 1615987665523,
+    "duration": 0,
+    "pid": 42127,
+    "index": 24
+  },
+  {
+    "name": "Before Start in node_modules/@midwayjs/web/dist/base.js:207:22",
+    "start": 1615987665525,
+    "end": 1615987667969,
+    "duration": 2444,
+    "pid": 42127,
+    "index": 25
+  }
+]

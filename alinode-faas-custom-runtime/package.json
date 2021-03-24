@@ -1,0 +1,37 @@
+{
+  "name": "ServerlessComponent",
+  "version": "0.0.1",
+  "dependencies": {
+    "@alicloud/ram": "^1.0.0",
+    "@serverless-devs/core": "0.0.29",
+    "@serverless-devs/s-core": "^0.0.22",
+    "lodash": "^4.17.20",
+    "promise-retry": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/eslint": "^7.2.6",
+    "@types/jest": "^26.0.10",
+    "@types/lodash": "^4.14.168",
+    "@types/node": "14",
+    "mwts": "^1.0.6",
+    "jest": "^26.4.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.2.0",
+    "ts-loader": "^8.0.14",
+    "typescript": "^3.9.7",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "scripts": {
+    "dev": "npx tsc -w -p tsconfig.json",
+    "prebuild": "rimraf dist",
+    "build:ts": "npx tsc -p tsconfig.json",
+    "build:component": "npx webpack --mode=production",
+    "publish": "npm run build:component && s platform publish",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "lint": "mwts check; tsc -p ./tsconfig.strict.json",
+    "lint:fix": "mwts fix; tsc -p ./tsconfig.strict.json",
+    "typecheck": "npx tsc -p tsconfig.json --noEmit"
+  }
+}

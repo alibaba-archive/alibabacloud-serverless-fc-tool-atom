@@ -1,0 +1,32 @@
+Type: Component
+Name: alinode-faas-sls-log-init
+Provider:
+  - Alibaba
+Version: 0.0.1
+Description:
+  zh: 初始化sls项目
+  en: init sls project
+HomePage: 项目首页地址
+Tags: #标签详情
+  - zh: 部署函数
+    en: English
+  - zh: 部署组件
+    en: English
+Category: 监控告警
+Service:
+  - Name: 日志服务
+    # Runtime: Python 3.6 如果服务是函数，还需要增加Runtime
+    Authorities:
+      - zh: 创建项目
+        en: create project
+Commands: # 指令，格式为指令：指令描述，例如：
+  test: 测试方法
+  deploy: 部署函数
+Properties:
+  Region: # 参数
+    Description:
+      zh: 参数描述
+      en: English
+    Required: true # 参数必选，true/false
+    Type: # 参数类型
+      - String
