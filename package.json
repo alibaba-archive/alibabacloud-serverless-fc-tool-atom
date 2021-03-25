@@ -1,0 +1,22 @@
+{
+  "name": "fc-alinode-atom",
+  "version": "1.0.0",
+  "description": "alinode fc serverless dev tools applications and components",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:node-sandbox/fc-alinode-atom.git"
+  },
+  "keywords": [
+    "alinode",
+    "insight",
+    "alinode-insight",
+    "fc",
+    "function-compute",
+    "serverless-devs"
+  ],
+  "author": "",
+  "license": "MIT"
+}
