@@ -1,326 +1,328 @@
 {
-  "keys": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts",
-  "middleware": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts",
+  "keys": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts",
+  "middleware": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.local.ts",
+  "currentRegion": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts",
+  "currentRegionLabel": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts",
   "sls": {
     "pandora-exception.deploy": {
-      "endpoint": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts",
-      "projectName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts",
-      "logStoreName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts"
+      "endpoint": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts",
+      "projectName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts",
+      "logStoreName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts"
     },
     "pandora-trace.deploy": {
-      "endpoint": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts",
-      "projectName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts",
-      "logStoreName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts"
+      "endpoint": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts",
+      "projectName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts",
+      "logStoreName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts"
     },
     "metricstore.deploy": {
-      "endpoint": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts",
-      "projectName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts",
-      "logStoreName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts"
+      "endpoint": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts",
+      "projectName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts",
+      "logStoreName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts"
     }
   },
   "view": {
-    "defaultViewEngine": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts",
-    "root": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view/config/config.default.js",
-    "cache": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view/config/config.local.js",
-    "defaultExtension": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view/config/config.default.js",
-    "mapping": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view/config/config.default.js"
+    "defaultViewEngine": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts",
+    "root": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-view/config/config.default.js"
   },
   "security": {
     "csrf": {
-      "enable": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.default.ts",
-      "type": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "ignoreJSON": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
-      "useSession": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "cookieName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "sessionName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "headerName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "bodyName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "queryName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "refererWhiteList": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts",
+      "type": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
+      "useSession": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
     },
-    "domainWhiteList": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-    "protocolWhiteList": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-    "defaultMiddleware": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+    "domainWhiteList": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
     "xframe": {
-      "enable": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.local.js",
-      "maxAge": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "includeSubdomains": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
     },
     "dta": {
-      "enable": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
     },
     "methodnoallow": {
-      "enable": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
     },
     "noopen": {
-      "enable": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
     },
     "nosniff": {
-      "enable": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
     },
     "referrerPolicy": {
-      "enable": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
     },
     "xssProtection": {
-      "enable": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
     },
     "csp": {
-      "enable": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "policy": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
-      "checkAddress": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
+      "ipBlackList": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
     }
   },
   "assets": {
-    "preflightPath": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.local.ts",
-    "publicPath": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/config.local.ts"
+    "preflightPath": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.local.ts",
+    "publicPath": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.local.ts"
   },
   "session": {
-    "maxAge": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-session/config/config.default.js",
-    "key": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-session/config/config.default.js",
-    "httpOnly": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-session/config/config.default.js",
-    "encrypt": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-session/config/config.default.js"
+    "maxAge": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-session/config/config.default.js"
   },
   "helper": {
-    "shtml": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
+    "shtml": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security/config/config.default.js"
   },
   "jsonp": {
-    "limit": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-jsonp/config/config.default.js",
-    "callback": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-jsonp/config/config.default.js",
-    "csrf": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-jsonp/config/config.default.js"
+    "limit": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-jsonp/config/config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-onerror/config/config.default.js",
-    "appErrorFilter": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-onerror/config/config.default.js",
-    "templatePath": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-onerror/config/config.default.js"
+    "errorPageUrl": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-onerror/config/config.default.js"
   },
   "i18n": {
-    "defaultLocale": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js",
-    "dirs": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js",
-    "queryField": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js",
-    "cookieField": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js",
-    "cookieDomain": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js",
-    "cookieMaxAge": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js"
+    "defaultLocale": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-i18n/config/config.default.js"
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-schedule/config/config.default.js",
-      "file": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-schedule/config/config.default.js"
+      "consoleLevel": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-schedule/config/config.default.js"
     }
   },
   "schedule": {
-    "directory": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-schedule/config/config.default.js"
+    "directory": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-schedule/config/config.default.js"
   },
   "multipart": {
-    "mode": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
-    "autoFields": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
-    "defaultCharset": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
-    "fieldNameSize": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
-    "fieldSize": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
-    "fields": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
-    "fileSize": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
-    "files": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
-    "fileExtensions": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
-    "whitelist": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
-    "tmpdir": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
+    "mode": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js",
     "cleanSchedule": {
-      "cron": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js"
+      "cron": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart/config/config.default.js"
     }
   },
   "logrotator": {
-    "filesRotateByHour": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
-    "hourDelimiter": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
-    "filesRotateBySize": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
-    "maxFileSize": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
-    "maxFiles": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
-    "rotateDuration": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
-    "maxDays": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js"
+    "filesRotateByHour": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-logrotator/config/config.default.js"
   },
   "static": {
-    "prefix": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-static/config/config.default.js",
-    "dir": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-static/config/config.default.js",
-    "dynamic": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-static/config/config.default.js",
-    "preload": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-static/config/config.default.js",
-    "buffer": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-static/config/config.default.js",
-    "maxFiles": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-static/config/config.default.js"
+    "prefix": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-static/config/config.default.js"
   },
   "xtpl": {
-    "cache": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view-xtpl/config/config.local.js",
-    "catchError": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view-xtpl/config/config.default.js",
-    "encoding": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view-xtpl/config/config.default.js"
+    "cache": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-view-xtpl/config/config.local.js",
+    "catchError": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-view-xtpl/config/config.default.js",
+    "encoding": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-view-xtpl/config/config.default.js"
   },
-  "env": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-  "name": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-  "cookies": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-  "proxy": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-  "maxIpsCount": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-  "maxProxyCount": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-  "protocolHeaders": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-  "ipHeaders": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-  "hostHeaders": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "env": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "name": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
   "pkg": {
-    "name": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "version": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "description": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "private": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "main": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "name": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "version": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "description": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "private": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "main": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
     "dependencies": {
-      "@alicloud/fc2": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "@midwayjs/decorator": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "@midwayjs/egg-layer": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "@midwayjs/serverless-fc-starter": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "@midwayjs/simple-lock": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "@midwayjs/web": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "@pandorajs/semantic-conventions": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "aliyun-sdk": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "egg": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "egg-cors": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "egg-view-xtpl": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+      "@alicloud/fc2": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "@midwayjs/decorator": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "@midwayjs/egg-layer": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "@midwayjs/serverless-fc-starter": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "@midwayjs/simple-lock": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "@midwayjs/web": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "@pandorajs/semantic-conventions": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "aliyun-sdk": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "egg": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "egg-view-xtpl": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
-      "@midwayjs/cli": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "@midwayjs/egg-ts-helper": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "@midwayjs/mock": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "@types/jest": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "@types/node": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "cross-env": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "egg-scripts": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "jest": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "mwts": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "ts-jest": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "typescript": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+      "@midwayjs/cli": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "@midwayjs/egg-ts-helper": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "@midwayjs/mock": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "@types/jest": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "@types/node": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "cross-env": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "jest": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "mwts": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "ts-jest": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "typescript": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
     },
     "engines": {
-      "node": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+      "node": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
     },
     "scripts": {
-      "start_build": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "pre:publish": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "build:ts": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "copy:static": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "copy:template": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "dev": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "test": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "cov": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "lint": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "lint:fix": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "ci": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "build": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+      "start_build": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "pre:publish": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "build:ts": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "copy:static": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "copy:template": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "dev": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "test": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "cov": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "lint": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "lint:fix": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "ci": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "build": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
     },
-    "midway-bin-clean": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "midway-bin-clean": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
     "midway-integration": {
       "lifecycle": {
-        "after:package:installDevDep": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+        "after:package:installDevDep": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
       }
     },
-    "author": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "license": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+    "author": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "license": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
   },
-  "baseDir": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-  "HOME": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-  "rundir": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
+  "baseDir": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
   "dump": {
-    "ignore": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+    "ignore": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "notFound": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "sitefile": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "middlewares": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "httpClient": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+    "bodyparser": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
   },
   "notfound": {
-    "pageUrl": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+    "pageUrl": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+    "/favicon.ico": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
   },
   "bodyParser": {
-    "enable": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "encoding": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "formLimit": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "jsonLimit": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "textLimit": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "strict": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "enable": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "strict": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
     "queryString": {
-      "arrayLimit": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "depth": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "parameterLimit": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+      "arrayLimit": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "depth": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
     },
-    "onerror": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+    "onerror": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
   },
   "logger": {
-    "dir": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "encoding": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "env": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "level": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "consoleLevel": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "disableConsoleAfterReady": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "outputJSON": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "buffer": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "appLogName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
-    "coreLogName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
-    "agentLogName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
-    "errorLogName": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "dir": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "env": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "level": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
+    "coreLogName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
+    "agentLogName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
+    "errorLogName": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
     "coreLogger": {
-      "consoleLevel": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.local.js"
+      "consoleLevel": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.local.js"
     },
-    "allowDebugAtProd": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+    "allowDebugAtProd": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "dnsCacheLookupInterval": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "dnsCacheMaxLength": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "enableDNSCache": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
     "request": {
-      "timeout": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+      "timeout": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "maxSockets": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "maxFreeSockets": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+      "keepAlive": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "maxSockets": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "maxFreeSockets": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+      "keepAlive": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
     }
   },
   "meta": {
-    "enable": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "logging": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+    "enable": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "logging": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
   },
-  "coreMiddleware": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-  "workerStartTimeout": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-  "serverTimeout": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "coreMiddleware": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
   "cluster": {
     "listen": {
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "port": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "hostname": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "port": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
-    "responseTimeout": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js"
+    "maxWaitTime": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
   },
-  "onClientError": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/config.default.js",
+  "onClientError": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
   "midwayFeature": {
-    "replaceEggLogger": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js"
+    "replaceEggLogger": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js"
   },
-  "pluginOverwrite": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
+  "pluginOverwrite": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
   "alinode": {
-    "logdir": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
-    "error_log": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
-    "packages": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js"
+    "logdir": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
+    "error_log": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js",
+    "packages": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/config.default.js"
   }
 }

@@ -5,6 +5,7 @@
 .fun
 /*/dist
 /**/node_modules
+/alinode-faas-insight/run
 
 # Logs
 logs

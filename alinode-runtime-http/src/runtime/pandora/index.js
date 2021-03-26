@@ -9,6 +9,7 @@ module.exports = (name, mode, extendContext) => {
     deployment_vendor: 'aliyun_fc',
     deployment_process_pid: process.pid,
     deployment_version: 'test',
+    deployment_region: 'cn-zhangjiakou',
     project_id: 'ServerlessToolProject.hongyi_test_function',
   });
 

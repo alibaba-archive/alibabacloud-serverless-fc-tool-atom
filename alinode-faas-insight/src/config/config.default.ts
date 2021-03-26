@@ -11,6 +11,9 @@ export default (appInfo: EggAppInfo) => {
   // add your config here
   config.middleware = ['error'];
 
+  config.currentRegion = 'cn-zhangjiakou';
+  config.currentRegionLabel = 'cn-zhangjiakou';
+
   config.sls = {
     'pandora-exception.deploy': {
       endpoint:

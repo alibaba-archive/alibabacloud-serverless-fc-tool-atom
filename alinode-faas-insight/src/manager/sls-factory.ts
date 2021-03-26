@@ -7,16 +7,9 @@ import {
   SLSClientConfig,
 } from '../common/sls-factory-base';
 import { Provide, Logger, Config, Plugin, Inject } from '@midwayjs/decorator';
+import { AccessService } from '../service/access';
 import { Dict } from '../type';
 import { safeAssert } from '../';
-
-const headers = {
-  'x-fc-access-key-id': 'STS.NUUSDzLJKHNgwD7UmdPBd3YUr',
-  'x-fc-access-key-secret': '1aVurHoSPZWe2EfTyd5KLmEDuBc5F9r9vtpFvc9HmSh',
-  'x-fc-security-token':
-    'CAIShgJ1q6Ft5B2yfSjIr5bgGP7OoZVq/4yMdWKGsW0xXM1I3Jz+kDz2IHlMf3VpAuwetvw+lGFX7/YZlqZdVplOWU3Da+B364xK7Q7523w2ZiLyv9I+k5SANTW5KXyShb3/AYjQSNfaZY3eCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZ8PGD6F00kYu1bPQx/ssQXGGLMPPK2SH7Qj3HXEVBjt3gX6wo9y9zmmJTHtEWB1AGglb5P+96rGPX+MZkwZqUYesyuwel7epDG1CNt8BVQ/M909vcdoWyb54rBWwEJskXXbLOEqccfJQt4YK82FqBNpePmmOV/oPDIk5/tzBJALV/Y0qNT2WHLGoABee41ds5UDOt8nEIs6h1uH/0pVVwlJ7PwFthfQ/oQZqDWNvWA/dZJDmlRshDETVMgJ0osFyp39feidRnzhDcpvo4Xpbvwz6Cy5NXYYr4TEAmj8dojviyMeRJlOWqzxz3vp884RV0qWtpo6d97mSfBqOT3zI8oTy+mrBsGmpp3Wtc=',
-};
-
 @Provide('SLSFactory')
 export class SLSFactory extends SLSFactoryBase {
   static SECRET_NAME = 'alinode-secret';
@@ -30,17 +23,20 @@ export class SLSFactory extends SLSFactoryBase {
   @Inject()
   protected ctx: Context;
 
+  @Inject()
+  accessService: AccessService;
+
   @Plugin()
   private httpclient: typeof urllib;
 
   public async getAccess(clientName: string): Promise<SLSClientConfig> {
-    // const { headers } = this.ctx;
+    const stsAccess = this.accessService.getSTSAccess();
     const accessOrigin = this.config[clientName];
     const access = Object.assign(
       {
-        accessKeyId: headers['x-fc-access-key-id'],
-        accessKeySecret: headers['x-fc-access-key-secret'],
-        securityToken: headers['x-fc-security-token'],
+        accessKeyId: stsAccess.accessKeyID,
+        accessKeySecret: stsAccess.accessKeySecret,
+        securityToken: stsAccess.securityToken,
       },
       this.ctx.credentials ?? {},
       accessOrigin

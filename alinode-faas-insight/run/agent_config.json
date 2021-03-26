@@ -75,7 +75,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -121,14 +121,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/app/public",
+      "dir": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/app/view",
+      "root": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "xtpl",
@@ -210,9 +210,9 @@
       "author": "jiakun.dujk",
       "license": "MIT"
     },
-    "baseDir": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src",
+    "baseDir": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src",
     "HOME": "/Users/wangcong",
-    "rundir": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/run",
+    "rundir": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -244,7 +244,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/logs/alinode-faas-insight",
+      "dir": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/logs/alinode-faas-insight",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -314,16 +314,19 @@
     "alinode": {
       "logdir": "/tmp",
       "error_log": [
-        "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/logs/alinode-faas-insight/common-error.log",
-        "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/logs/stderr.log"
+        "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/logs/alinode-faas-insight/common-error.log",
+        "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/logs/stderr.log"
       ],
       "packages": [
-        "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/package.json"
+        "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/package.json"
       ]
     },
     "middleware": [
-      "error"
+      "error",
+      "mock"
     ],
+    "currentRegion": "cn-zhangjiakou",
+    "currentRegionLabel": "cn-zhangjiakou",
     "sls": {
       "pandora-exception.deploy": {
         "endpoint": "http://alinode-cloud-runtime-cn-zhangjiakou.cn-zhangjiakou.log.aliyuncs.com",
@@ -359,8 +362,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-onerror",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/plugin.js",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "session": {
@@ -370,8 +373,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-session",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/plugin.js",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-session",
       "version": "3.2.0"
     },
     "i18n": {
@@ -381,8 +384,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-i18n",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/plugin.js",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -392,8 +395,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/plugin.js",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-watcher",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/plugin.js",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-watcher",
       "version": "3.1.1"
     },
     "multipart": {
@@ -405,8 +408,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-multipart",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/plugin.js",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-multipart",
       "version": "2.10.3"
     },
     "security": {
@@ -418,8 +421,8 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-security",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/plugin.js",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-security",
       "version": "2.8.0"
     },
     "development": {
@@ -433,8 +436,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/plugin.js",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-development",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/plugin.js",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-development",
       "version": "2.7.0"
     },
     "logrotator": {
@@ -446,8 +449,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-logrotator",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/plugin.js",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "schedule": {
@@ -457,8 +460,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-schedule",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/plugin.js",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-schedule",
       "version": "3.6.6"
     },
     "static": {
@@ -468,8 +471,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/plugin.ts",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-static",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/plugin.ts",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-static",
       "version": "2.2.0"
     },
     "jsonp": {
@@ -481,8 +484,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg/config/plugin.js",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-jsonp",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/plugin.js",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "view": {
@@ -492,8 +495,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/plugin.ts",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/plugin.ts",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-view",
       "version": "2.1.3"
     },
     "schedulePlus": {
@@ -505,8 +508,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/web/config/plugin.js",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/midway-schedule",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/web/config/plugin.js",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/midway-schedule",
       "version": "2.8.11"
     },
     "xtpl": {
@@ -518,8 +521,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/src/config/plugin.ts",
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-view-xtpl",
+      "from": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/plugin.ts",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-view-xtpl",
       "version": "1.2.0"
     },
     "egg-mock": {
@@ -529,7 +532,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/egg-mock",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-mock",
       "version": "3.25.1"
     },
     "midway-mock": {
@@ -539,7 +542,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "path": "/Users/wangcong/Documents/workspace/fc-component/alinode-faas-insight/node_modules/@midwayjs/mock",
+      "path": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/@midwayjs/mock",
       "version": "2.8.11"
     }
   }

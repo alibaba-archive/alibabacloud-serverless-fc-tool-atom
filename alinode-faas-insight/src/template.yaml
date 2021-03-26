@@ -1,9 +1,9 @@
 MyFunctionDemo:
-  Component: /Users/wangcong/Documents/workspace/fc-component/faas-sls-log/src/
+  Component: /Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/faas-sls-log/src/
   Provider: alibaba
   AccessAlias: ''
   Properties:
-    Region: cn-hangzhou
+    Region: cn-zhangjiakou
     Service:
       Description: 欢迎使用ServerlessTool
       InternetAccess: true

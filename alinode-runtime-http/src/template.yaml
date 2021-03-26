@@ -1,6 +1,6 @@
 HongyiFunctionDemo:
   Component: >-
-    /Users/wangcong/Documents/workspace/fc-component/alinode-faas-custom-runtime/dist
+    /Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-custom-runtime/dist
   Provider: alibaba
   AccessAlias: ''
   Properties:
