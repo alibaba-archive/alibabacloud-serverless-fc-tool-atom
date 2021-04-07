@@ -85,6 +85,10 @@
     "preflightPath": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.local.ts",
     "publicPath": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.local.ts"
   },
+  "loginUser": {
+    "username": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts",
+    "password": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/src/config/config.default.ts"
+  },
   "session": {
     "maxAge": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-session/config/config.default.js",
     "key": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg-session/config/config.default.js",
@@ -185,7 +189,9 @@
       "aliyun-sdk": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
       "egg": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
       "egg-cors": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
-      "egg-view-xtpl": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
+      "egg-passport": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "egg-view-xtpl": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "passport-local": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
       "@midwayjs/cli": "/Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",

@@ -1,5 +1,5 @@
 MyFunctionDemo:
-  Component: /Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/faas-sls-log/src/
+  Component: /Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-sls-log/src/
   Provider: alibaba
   AccessAlias: ''
   Properties:
@@ -19,7 +19,7 @@ MyFunctionDemo:
         MountPoints: []
       Log:
         LogStore: function-log
-        Project: aliyun-fc-cn-hangzhou-edb0aa80-bf48-584c-8e53-18d34610234a
+        Project: aliyun-fc-cn-zhangjiakou-edb0aa80-bf48-584c-8e53-18d34610234a
     Function:
       Name: alinode_faas_insight_demo
       Description: 这是一个Nodejs10的测试demo

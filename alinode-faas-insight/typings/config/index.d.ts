@@ -15,6 +15,7 @@ import 'egg-jsonp';
 import 'egg-view';
 import 'midway-schedule';
 import 'egg-view-xtpl';
+import 'egg-passport';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -32,5 +33,6 @@ declare module 'egg' {
     view?: EggPluginItem;
     schedulePlus?: EggPluginItem;
     xtpl?: EggPluginItem;
+    passport?: EggPluginItem;
   }
 }

@@ -5,19 +5,23 @@ import {
   Inject,
   Priority,
   Config,
+  Post,
+  Body,
+  ALL,
 } from '@midwayjs/decorator';
 import { customConfig } from '../configuration';
 import { AssetsService } from '../service/assets';
+import { AuthService } from '../service/auth';
 
 @Provide()
 @Priority(-1)
 @Controller(`${customConfig.prefix ?? ''}/`)
 export class HomeController {
   @Inject()
-  exceptionService;
+  assetsService: AssetsService;
 
   @Inject()
-  assetsService: AssetsService;
+  authService: AuthService;
 
   @Inject()
   ctx;
@@ -31,13 +35,19 @@ export class HomeController {
   @Config('env')
   env;
 
-  @Get('/exception')
-  async exception() {
-    try {
-      return await this.exceptionService.query('test', {});
-    } catch (error) {
-      return error.message;
-    }
+  @Post('/api/login')
+  async login(@Body(ALL) body) {
+    const { username, password } = body;
+    await this.authService.login({
+      username,
+      password,
+    });
+    this.ctx.ok(true);
+  }
+
+  @Get('/logout')
+  async logout() {
+    this.authService.logout();
   }
 
   @Get('/api/*')

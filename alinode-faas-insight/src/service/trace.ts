@@ -77,7 +77,10 @@ export class TraceService {
         `and duration <= ${options?.maxDuration}`
       ),
     ].join(' ');
-    const filterQl = `where startTime >= ${startTime} and startTime <= ${endTime} ${statusCodeFilter} ${durationFilter} ${filterNullName}`;
+    const traceIdFilter = [
+      notNullableAnd(options?.traceId, `and traceId = '${options?.traceId}'`),
+    ].join(' ');
+    const filterQl = `where startTime >= ${startTime} and startTime <= ${endTime} ${statusCodeFilter} ${durationFilter} ${filterNullName} ${traceIdFilter}`;
     const queryQl = `${ql} | select attributes, context, duration, endTime, ended, events, kind, links, name, parentSpanId, spanId, startTime, "status.code" as statusCode, traceId ${filterQl}`;
 
     const orderBy: [string, string][] = [['startTime', 'DESC']];

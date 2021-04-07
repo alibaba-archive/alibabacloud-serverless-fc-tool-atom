@@ -5,5 +5,9 @@ export default {
   xtpl: {
     enable: true,
     package: 'egg-view-xtpl',
-  }
+  },
+  passport: {
+    enable: true,
+    package: 'egg-passport',
+  },
 } as EggPlugin;

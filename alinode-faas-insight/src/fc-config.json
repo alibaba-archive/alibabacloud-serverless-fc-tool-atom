@@ -1,0 +1,24 @@
+{
+  "region": "cn-zhangjiakou",
+  "pandoraSLS": {
+    "pandora-exception.deploy": {
+      "endpoint": "http://alinode-cloud-runtime-cn-zhangjiakou.cn-zhangjiakou.log.aliyuncs.com",
+      "projectName": "alinode-cloud-runtime-cn-zhangjiakou",
+      "logStoreName": "pandora-exceptions"
+    },
+    "pandora-trace.deploy": {
+      "endpoint": "http://alinode-cloud-runtime-cn-zhangjiakou.cn-zhangjiakou.log.aliyuncs.com",
+      "projectName": "alinode-cloud-runtime-cn-zhangjiakou",
+      "logStoreName": "pandora-traces"
+    },
+    "metricstore.deploy": {
+      "endpoint": "http://alinode-cloud-runtime-cn-zhangjiakou.cn-zhangjiakou.log.aliyuncs.com",
+      "projectName": "alinode-cloud-runtime-cn-zhangjiakou",
+      "logStoreName": "pandora-metricstore"
+    }
+  },
+  "login": {
+    "username": "admin",
+    "password": "123"
+  }
+}

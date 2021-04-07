@@ -6,7 +6,7 @@ export default (appInfo: EggAppInfo) => {
   const config = {} as DefaultConfig;
 
   // add your config here
-  config.middleware = ['error', 'mock'];
+  config.middleware = ['error', 'login', 'mock'];
 
   config.assets = {
     preflightPath: '//127.0.0.1:3333/',
