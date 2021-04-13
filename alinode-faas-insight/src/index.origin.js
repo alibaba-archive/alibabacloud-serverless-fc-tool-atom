@@ -43,6 +43,7 @@ exports.initializer = asyncWrapper(async (...args) => {
 exports.handler = asyncWrapper(async (...args) => {
   args[0].headers = {
     ...args[0].headers,
+    'x-fc-account-id': args[2].accountId,
     'x-fc-access-key-id': args[2].credentials.accessKeyId,
     'x-fc-access-key-secret': args[2].credentials.accessKeySecret,
     'x-fc-security-token': args[2].credentials.securityToken,

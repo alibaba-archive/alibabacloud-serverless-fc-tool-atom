@@ -31,6 +31,7 @@ module.exports = class TracesSLSExporter {
         context: it.spanContext,
         links: it.links,
         attributes: {
+          service_name: `${it.attributes['http.method']} ${it.attributes['http.url']}`,
           ...resource.attributes,
           ...it.attributes,
         },

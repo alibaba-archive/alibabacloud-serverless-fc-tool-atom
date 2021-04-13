@@ -224,7 +224,7 @@
       "scripts": {
         "start_build": "npm run build && cross-env NODE_ENV=development midway-bin dev",
         "pre:publish": "rm -rf ./dist && npm run build:ts && cp ./package.json ./dist/",
-        "build:ts": "rm -rf ./src/dist && tsc && npm run copy:static && npm run copy:template",
+        "build:ts": "tsc && npm run copy:static && npm run copy:template",
         "copy:static": "cp -r ./src/app/public ./dist/dist/app/ && cp -r ./src/app/view ./dist/dist/app/",
         "copy:template": "cp ./src/index.origin.js ./dist/index.js && cp ./src/template.yaml ./dist/",
         "dev": "cross-env ets && cross-env NODE_ENV=local midway-bin dev --ts --framework @midwayjs/web",
@@ -233,7 +233,7 @@
         "lint": "mwts check",
         "lint:fix": "mwts fix",
         "ci": "npm run cov",
-        "build": "midway-bin build -c"
+        "build": "npm run pre:publish"
       },
       "midway-bin-clean": [
         ".vscode/.tsbuildinfo",
