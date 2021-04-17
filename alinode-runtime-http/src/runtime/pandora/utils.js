@@ -56,10 +56,13 @@ const isSlsSpan = function (span) {
   return serviceName === endpoint && kind === RpcKind.CLIENT;
 };
 
+const LOCAL_ACCESS_PATH = '/tmp/local_access';
+
 module.exports = {
   customContext,
   hrTimeToMilliseconds,
   extractHttpCanonicalCodeFromSpan,
   extractServiceNameFromSpan,
   isSlsSpan,
+  LOCAL_ACCESS_PATH,
 };

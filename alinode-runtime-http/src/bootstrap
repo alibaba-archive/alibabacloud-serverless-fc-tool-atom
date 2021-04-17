@@ -1,3 +1,3 @@
 #!/bin/bash
-nohup node ./runtime/start_pandora.js &
-node ./runtime/server.js
+nohup alinode/bin/node ./runtime/pandora/start_pandora.js &
+alinode/bin/node ./runtime/agent.js

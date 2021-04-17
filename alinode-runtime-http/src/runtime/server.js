@@ -7,7 +7,7 @@ const { Resource } = require('@opentelemetry/resources');
 const slsConfig = require('./pandora/slsConfig');
 const SLSReport = require('./pandora/SLSReporter');
 const { customContext } = require('./pandora/utils');
-const { handler } = require('../index');
+const { handler } = require('../code/index');
 
 const metricsSlsReport = new SLSReport(slsConfig.metrics);
 const tracesSlsReport = new SLSReport(slsConfig.traces);
@@ -68,8 +68,9 @@ app.use(async function (req, res, next) {
 app.post('/*', (req, res) => {
   console.error('mock test error'); // TODO 调试好去掉
   const headers = req.headers;
-
-  handler(req, res, customContext(headers));
+  setTimeout(() => {
+    handler(req, res, customContext(headers));
+  });
 });
 
 async function initWithPandora() {

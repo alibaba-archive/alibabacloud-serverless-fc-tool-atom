@@ -1,6 +1,6 @@
+const config = require('../config.json');
 module.exports = {
-  endpoint:
-    'alinode-cloud-runtime-cn-zhangjiakou.cn-zhangjiakou.log.aliyuncs.com',
+  endpoint: `alinode-cloud-runtime-${config.region}.${config.region}.log.aliyuncs.com`,
   source: 'alinode-custom-runtime',
   metrics: {
     logstore: 'pandora-metrics',

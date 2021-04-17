@@ -1,0 +1,31 @@
+Type: Component
+Name: alinode-runtime-deploy
+Provider:
+  - Alibaba
+Version: 0.0.6
+Description:
+  zh: 为 alinode runtime application 提供部署功能的组件
+  en: The component for deploy alinode runtime application
+HomePage: 'https://www.aliyun.com/product/fc'
+Category: Web框架
+Tags:
+  - zh: 部署函数
+    en: Deploy function
+Service:
+  - Name: 函数计算
+    Runtime: Other
+    Authorities:
+      - zh: 创建函数
+        en: Create function
+      - zh: RAM授权
+        en: RAM
+Properties:
+  Region:
+    Description: 部署地域
+    Required: true
+    Example: cn-zhangjiakou
+    Default: cn-zhangjiakou
+    Type:
+      - 'String[字符串]'
+Commands:
+  deploy: 部署函数

@@ -4,29 +4,37 @@ Provider:
   - Alibaba
 Version: 0.0.1
 Description:
-  zh: 初始化sls项目
-  en: init sls project
-HomePage: 项目首页地址
-Tags: #标签详情
-  - zh: 部署函数
-    en: English
-  - zh: 部署组件
-    en: English
+  zh: 为 Alinode Insight 初始化sls项目等底层存储
+  en: Init sls project and other sotrage for Alinode Insight
+HomePage: 'https://www.aliyun.com/product/fc'
 Category: 监控告警
+Tags:
+  - zh: 部署函数
+    en: deploy function
+  - zh: 初始化sls
+    en: init sls
 Service:
   - Name: 日志服务
-    # Runtime: Python 3.6 如果服务是函数，还需要增加Runtime
+    Runtime: Other
     Authorities:
-      - zh: 创建项目
-        en: create project
-Commands: # 指令，格式为指令：指令描述，例如：
-  test: 测试方法
-  deploy: 部署函数
+      - zh: 创建 sls project
+        en: create sls project
+      - zh: 创建 sls logstore
+        en: create sls logstore
+      - zh: 创建 sls logstore 索引
+        en: create sls log index
+      - zh: 创建 sls 数据加工任务
+        en: create sls data job
+      - zh: 创建 sls metricstore
+        en: create sls metricstore
 Properties:
-  Region: # 参数
-    Description:
-      zh: 参数描述
-      en: English
-    Required: true # 参数必选，true/false
-    Type: # 参数类型
-      - String
+  Region:
+    Description: 部署地域
+    Required: true
+    Example: cn-zhangjiakou
+    Default: cn-zhangjiakou
+    Type:
+      - 'String[字符串]'
+Commands:
+  deploy: 部署函数
+  sync: 同步远程配置

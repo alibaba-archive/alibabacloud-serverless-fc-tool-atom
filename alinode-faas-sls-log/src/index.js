@@ -3,22 +3,15 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
-const { Component } = require('@serverless-devs/s-core');
-const { getCredential } = require('@serverless-devs/core');
+const { getCredential, loadComponent } = require('@serverless-devs/core');
 const SLS = require('./sls/index');
 const slsConfig = require('./sls/config');
 
-class MyComponent extends Component {
+class MyComponent {
   async deploy(inputs) {
-    // 输入的inputs参数结构
-    console.log('check user input', JSON.stringify(inputs));
-
-    // 将Args转成Object
-    const tempArgs = this.args(inputs.Args, [], []);
-
     const aliyunAccess = await getCredential('alibaba');
 
-    const { region = 'cn-zhangjiakou' } = tempArgs.Parameters;
+    const { Region: region = 'cn-zhangjiakou' } = inputs.Properties;
     // 初始化 sls project logstore
     const slsClient = new SLS({
       accessKeyId: aliyunAccess.AccessKeyID,
@@ -64,11 +57,13 @@ class MyComponent extends Component {
       })
     );
 
-    // 初始化 Alinode Insight 项目
+    // TODO 初始化 Alinode Insight 项目
 
-    // 先用 fc 组件部署，后续等 runtime 组件发布后，用 runtime 组件部署
-    const fc = await this.load('fc', 'Component', 'alibaba');
-    return await fc.deploy({
+    const alinodeDeploy = await loadComponent(
+      'alinode-runtime-deploy',
+      'http://registry.serverlessfans.cn/simple'
+    );
+    return await alinodeDeploy.deploy({
       ...inputs,
       Properties: {
         ...inputs.Properties,
@@ -78,6 +73,11 @@ class MyComponent extends Component {
         },
       },
     });
+  }
+
+  async sync(inputs) {
+    const fc = await loadComponent('fc');
+    return await fc.sync(inputs);
   }
 }
 module.exports = MyComponent;

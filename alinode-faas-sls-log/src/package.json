@@ -3,10 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "@alicloud/log": "^1.2.1",
-    "@serverless-devs/core": "^0.0.29",
-    "@serverless-devs/s-core": "^0.0.22",
-    "aliyun-sdk": "^1.12.3",
-    "axios": "^0.21.1",
-    "urllib": "^2.36.1"
+    "@serverless-devs/core": "^0.0.54",
+    "@serverless-devs/s-core": "^0.0.22"
   }
 }

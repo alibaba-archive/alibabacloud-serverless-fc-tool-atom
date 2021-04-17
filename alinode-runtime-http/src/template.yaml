@@ -1,6 +1,5 @@
 HongyiFunctionDemo:
-  Component: >-
-    /Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-custom-runtime/dist
+  Component: alinode-runtime-deploy
   Provider: alibaba
   AccessAlias: ''
   Properties:
@@ -10,7 +9,7 @@ HongyiFunctionDemo:
       Description: 欢迎使用ServerlessTool
       InternetAccess: true
       Role: 'acs:ram::1213677042792422:role/alinodefaasreportslsrole'
-      Name: ServerlessToolProject2
+      Name: ServerlessToolProject3
       Vpc:
         SecurityGroupId: ''
         VSwitchIds: []
@@ -23,7 +22,7 @@ HongyiFunctionDemo:
         LogStore: function-log
         Project: aliyun-fc-cn-zhangjiakou-edb0aa80-bf48-584c-8e53-18d34610234a
     Function:
-      Name: hongyi_test_function_demo
+      Name: hongyi_test_function_demo_new
       CodeUri: ./
       Description: 这是一个鸿义的测试函数
       Runtime: custom

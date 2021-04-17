@@ -1,5 +1,7 @@
+const fs = require('fs');
 const SLSProducer = require('sls-logger-stage/dist/slsProducer').default;
 const slsConfig = require('./slsConfig');
+const { LOCAL_ACCESS_PATH } = require('./utils');
 
 const DEFAULT_BULK_SIZE = 512;
 
@@ -39,9 +41,16 @@ module.exports = class ExceptionsSLSExporter {
     return logger;
   }
 
+  _writeAccssLocal(access) {
+    fs.writeFile(LOCAL_ACCESS_PATH, JSON.stringify(access), () => {
+      console.log('update access ok');
+    });
+  }
+
   _updateLogger(access) {
     this.logger = this._initLogger(access);
     this.latestUpdateAt = Date.now();
+    this._writeAccssLocal(access);
     if (this.logger) {
       this.ready = true;
       this._start();
