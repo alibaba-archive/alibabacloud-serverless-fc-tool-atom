@@ -9,8 +9,6 @@ export abstract class SlsDataSource {
   abstract clientName: string;
 
   async query(queryQl: string, options) {
-    console.log('query ql ===>', queryQl);
-
     const result = await this.clientFactory.getLogs(this.clientName, {
       // sls query 的 from 和 to 延长3秒，https://help.aliyun.com/document_detail/29029.html，精确的时间控制在分析语句中用 where 控制
       from: Math.round(Number(options.start) / 1000) - 3,

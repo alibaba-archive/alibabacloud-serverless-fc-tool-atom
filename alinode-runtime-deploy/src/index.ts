@@ -2,6 +2,8 @@ import { getCredential } from '@serverless-devs/core';
 import { Component } from '@serverless-devs/s-core';
 import { getRole, getPolicys, RoleName } from './policys';
 import RamCompoent from './components/ram';
+import fs from 'fs';
+import path from 'path';
 
 export default class AliNodeFaasCustomRuntime extends Component {
   private async creatRam(inputs: any, region, accountId) {
@@ -26,20 +28,27 @@ export default class AliNodeFaasCustomRuntime extends Component {
   async deploy(inputs: any) {
     // 输入的inputs参数结构
 
-    const { Region: region = 'cn-zhangjiakou' } = inputs.Properties;
+    const {
+      Region: region = 'cn-zhangjiakou',
+      reportOssBucket = 'alinode-insight',
+    } = inputs.Properties;
+
+    await fs.writeFileSync(
+      path.resolve('./runtime/fc-config.json'),
+      JSON.stringify({
+        region,
+        bucket: reportOssBucket,
+        functionName: inputs.Properties.Function.Name,
+        serviceName: inputs.Properties.Service.Name,
+      })
+    );
 
     const aliyunAccess = await getCredential('alibaba');
 
-    const {
-      // AccessKeyID,
-      // AccessKeySecret,
-      AccountID,
-    } = aliyunAccess;
+    const { AccountID } = aliyunAccess;
 
     // 创建 sts role policys
     await this.creatRam(inputs, region, AccountID);
-
-    // 生成 runtime 文件， pandora 文件?
 
     // 发布，并绑定角色到对应的 service、function
     const fcDeploy = await this.load('fc', 'Component', 'alibaba');

@@ -1,4 +1,4 @@
-const config = require('../config.json');
+const config = require('../fc-config.json');
 module.exports = {
   endpoint: `alinode-cloud-runtime-${config.region}.${config.region}.log.aliyuncs.com`,
   source: 'alinode-custom-runtime',

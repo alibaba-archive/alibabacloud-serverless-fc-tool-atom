@@ -1,5 +1,5 @@
 HongyiFunctionDemo:
-  Component: alinode-runtime-deploy
+  Component: /Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-runtime-deploy/dist
   Provider: alibaba
   AccessAlias: ''
   Properties:

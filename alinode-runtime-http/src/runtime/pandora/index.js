@@ -2,15 +2,16 @@ const CoreSDK = require('@pandorajs/core-sdk').CoreSDK;
 const { Resource } = require('@opentelemetry/resources');
 const defaultConfig = require('./pandoraConfig');
 const { NodeTracerProvider } = require('@opentelemetry/node');
+const config = require('../fc-config.json');
 
 module.exports = (name, mode, extendContext) => {
   const resource = new Resource({
     deployment_alinode: process.version,
     deployment_vendor: 'aliyun_fc',
     deployment_process_pid: process.pid,
-    deployment_version: 'test',
-    deployment_region: 'cn-zhangjiakou',
-    project_id: 'ServerlessToolProject.hongyi_test_function',
+    deployment_version: config.version || '',
+    deployment_region: config.region,
+    project_id: `${config.serviceName}.${config.functionName}`,
   });
 
   defaultConfig.trace.tracerProvider = new NodeTracerProvider({
