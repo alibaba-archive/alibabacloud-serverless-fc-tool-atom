@@ -2,7 +2,7 @@ Type: Application
 Name: alinode-runtime-http
 Provider:
   - Alibaba
-Version: 0.0.4
+Version: 0.0.5
 Description:
   zh: alinode 提供的 http runtime，内置了指标、链路、异常采集，采集数据集成到 Alinode Insight 中
   en: 'alinode http runtime, include metrics、traces、exceptions'
