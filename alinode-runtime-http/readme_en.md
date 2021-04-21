@@ -16,4 +16,4 @@
 ## 注意事项
 
 为了确保 Alinode Insight 能监控到您的应用，请在 fc 控制台配置初始化函数、PreStop 函数、PreFreeze 函数。配置路径为 `函数 -> 概览 -> 修改配置 -> 扩展函数`。具体配置如下图
-[!https://img.alicdn.com/imgextra/i3/O1CN01mnWpyq1t1E5sovN9M_!!6000000005841-2-tps-1604-870.png]
+![配置示例](https://img.alicdn.com/imgextra/i3/O1CN01mnWpyq1t1E5sovN9M_!!6000000005841-2-tps-1604-870.png)
