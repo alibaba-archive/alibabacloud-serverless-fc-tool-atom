@@ -15,6 +15,10 @@ export default (appInfo: EggAppInfo) => {
   config.currentRegion = fcConfig.region;
   config.currentRegionLabel = fcConfig.region;
 
+  config.oss = {
+    reportBucket: fcConfig.reportOssBucket,
+  };
+
   config.sls = fcConfig.pandoraSLS;
 
   config.view = {

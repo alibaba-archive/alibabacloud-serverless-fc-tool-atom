@@ -22,6 +22,7 @@
     "@pandorajs/core-sdk": "3.1.0-alpha.0",
     "@pandorajs/semantic-conventions": "3.1.0-alpha.0",
     "@serverless-devs/core": "^0.0.29",
+    "@serverless-devs/s-core": "^0.0.28",
     "ali-oss": "^6.15.2",
     "express": "^4.17.1",
     "extend": "^3.0.2",

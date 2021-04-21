@@ -12,6 +12,7 @@
     "@midwayjs/simple-lock": "^1.1.4",
     "@midwayjs/web": "^2.8.11",
     "@pandorajs/semantic-conventions": "^3.0.2",
+    "ali-oss": "^6.15.2",
     "aliyun-sdk": "^1.12.3",
     "egg": "^2.0.0",
     "egg-cors": "^2.2.3",

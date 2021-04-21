@@ -36,5 +36,4 @@ Properties:
     Type:
       - 'String[字符串]'
 Commands:
-  deploy: 部署函数
   sync: 同步远程配置

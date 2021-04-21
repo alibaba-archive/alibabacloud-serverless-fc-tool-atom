@@ -49,7 +49,12 @@ export const getPolicys = (region, accountId) => {
       {
         Action: ['oss:PutObject*'],
         Effect: 'Allow',
-        Resource: ['acs:oss:*:*:alinode-insight/*'],
+        Resource: [`acs:oss:*:*:alinode-insight-${region}/*`],
+      },
+      {
+        Action: ['oss:GetObjects*', 'oss:ListObjects*', 'oss:GetObject*'],
+        Effect: 'Allow',
+        Resource: [`*`],
       },
     ],
   };

@@ -4,12 +4,13 @@ import { getRole, getPolicys, RoleName } from './policys';
 import RamCompoent from './components/ram';
 import fs from 'fs';
 import path from 'path';
+import { execSync } from 'child_process';
 
 export default class AliNodeFaasCustomRuntime extends Component {
   private async creatRam(inputs: any, region, accountId) {
     const ram = new RamCompoent();
     const role = getRole(accountId);
-    const policys = getPolicys(accountId, region);
+    const policys = getPolicys(region, accountId);
     await ram.create({
       ...inputs,
       Properties: {
@@ -37,13 +38,15 @@ export default class AliNodeFaasCustomRuntime extends Component {
       path.resolve('./runtime/fc-config.json'),
       JSON.stringify({
         region,
-        bucket: reportOssBucket,
+        bucket: `${reportOssBucket}-${region}`,
         functionName: inputs.Properties.Function.Name,
         serviceName: inputs.Properties.Service.Name,
       })
     );
 
     const aliyunAccess = await getCredential('alibaba');
+
+    await execSync('cnpm install --production');
 
     const { AccountID } = aliyunAccess;
 

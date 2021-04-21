@@ -49,7 +49,6 @@ export class MetricStore {
   }
 
   async query(queryOptions: type.QueryOptions): Promise<type.QueryResult> {
-    console.log('queryOptions.query ===>', queryOptions.query);
     if (this.clientFactory) {
       const data = await this.clientFactory.getLogs('metricstore.deploy', {
         from: Math.floor(
@@ -82,7 +81,6 @@ export class MetricStore {
   async queryRange(
     queryOptions: type.RangeQueryOptions
   ): Promise<type.QueryResult> {
-    console.log('queryOptions.queryRange ===>', queryOptions.query);
     if (this.clientFactory) {
       const data = await this.clientFactory.getLogs('metricstore.deploy', {
         from: Math.floor(Number(queryOptions.start)),

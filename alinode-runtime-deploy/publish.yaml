@@ -2,7 +2,7 @@ Type: Component
 Name: alinode-runtime-deploy
 Provider:
   - Alibaba
-Version: 0.0.7
+Version: 0.0.11
 Description:
   zh: 为 alinode runtime application 提供部署功能的组件
   en: The component for deploy alinode runtime application

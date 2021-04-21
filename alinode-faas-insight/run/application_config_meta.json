@@ -3,6 +3,9 @@
   "middleware": "/Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-faas-insight/src/config/config.local.ts",
   "currentRegion": "/Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-faas-insight/src/config/config.default.ts",
   "currentRegionLabel": "/Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-faas-insight/src/config/config.default.ts",
+  "oss": {
+    "reportBucket": "/Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-faas-insight/src/config/config.default.ts"
+  },
   "sls": {
     "pandora-exception.deploy": {
       "endpoint": "/Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-faas-insight/src/config/config.default.ts",
@@ -186,6 +189,7 @@
       "@midwayjs/simple-lock": "/Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
       "@midwayjs/web": "/Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
       "@pandorajs/semantic-conventions": "/Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
+      "ali-oss": "/Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
       "aliyun-sdk": "/Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
       "egg": "/Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",
       "egg-cors": "/Users/wangcong/Documents/workspace/fc-component/alibabacloud-serverless-fc-tool-atom/alinode-faas-insight/node_modules/egg/config/config.default.js",

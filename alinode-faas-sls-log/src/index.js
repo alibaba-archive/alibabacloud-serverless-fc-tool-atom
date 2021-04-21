@@ -3,15 +3,20 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
-const { getCredential, loadComponent } = require('@serverless-devs/core');
+const { getCredential } = require('@serverless-devs/core');
+const { Component } = require('@serverless-devs/s-core');
 const SLS = require('./sls/index');
 const slsConfig = require('./sls/config');
 
-class MyComponent {
+class MyComponent extends Component {
   async deploy(inputs) {
-    const aliyunAccess = await getCredential('alibaba');
+    const aliyunAccess = await getCredential();
 
-    const { Region: region = 'cn-zhangjiakou' } = inputs.Properties;
+    const {
+      Region: region = 'cn-zhangjiakou',
+      reportOssBucket = 'alinode-insight',
+    } = inputs.Properties;
+    const login = inputs.Properties.Function.LoginConfig;
     // 初始化 sls project logstore
     const slsClient = new SLS({
       accessKeyId: aliyunAccess.AccessKeyID,
@@ -27,6 +32,7 @@ class MyComponent {
       path.resolve('./dist/fc-config.json'),
       JSON.stringify({
         region,
+        reportOssBucket,
         pandoraSLS: {
           'pandora-exception.deploy': {
             endpoint: `http://${slsConfig.projectName}-${region}.${region}.log.aliyuncs.com`,
@@ -45,25 +51,19 @@ class MyComponent {
           'metricstore.deploy': {
             endpoint: `http://${slsConfig.projectName}-${region}.${region}.log.aliyuncs.com`,
             projectName: `${slsConfig.projectName}-${region}`,
-            logStoreName: slsConfig.logstores.find(
-              (item) => item.topic === 'metrics'
-            ).name,
+            logStoreName: slsConfig.metricstore,
           },
         },
         login: {
-          username: 'admin',
-          password: '123',
+          username: String(login.username),
+          password: String(login.password),
         },
       })
     );
 
-    // TODO 初始化 Alinode Insight 项目
-
-    const alinodeDeploy = await loadComponent(
-      'alinode-runtime-deploy',
-      'http://registry.serverlessfans.cn/simple'
-    );
-    return await alinodeDeploy.deploy({
+    // 发布
+    const fcDeploy = await this.load('fc', 'Component', 'alibaba');
+    return await fcDeploy.deploy({
       ...inputs,
       Properties: {
         ...inputs.Properties,
@@ -76,7 +76,7 @@ class MyComponent {
   }
 
   async sync(inputs) {
-    const fc = await loadComponent('fc');
+    const fc = await this.load('fc');
     return await fc.sync(inputs);
   }
 }

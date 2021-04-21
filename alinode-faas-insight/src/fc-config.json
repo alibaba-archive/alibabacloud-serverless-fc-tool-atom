@@ -20,5 +20,6 @@
   "login": {
     "username": "admin",
     "password": "123"
-  }
+  },
+  "reportOssBucket": "alinode-insight"
 }

@@ -76,7 +76,6 @@ module.exports = class ComponentSLSReporter {
     if (isSlsSpan(span)) {
       return;
     }
-    console.log('span durtaion', hrTimeToMilliseconds(span.duration));
     const canonicalCode = extractHttpCanonicalCodeFromSpan(span);
     const labels = this.extractLabelsFromSpan(span);
     this._requestCounter.add(1, labels);

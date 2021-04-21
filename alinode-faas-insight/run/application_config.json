@@ -198,6 +198,7 @@
         "@midwayjs/simple-lock": "^1.1.4",
         "@midwayjs/web": "^2.8.11",
         "@pandorajs/semantic-conventions": "^3.0.2",
+        "ali-oss": "^6.15.2",
         "aliyun-sdk": "^1.12.3",
         "egg": "^2.0.0",
         "egg-cors": "^2.2.3",
@@ -372,6 +373,9 @@
     ],
     "currentRegion": "cn-zhangjiakou",
     "currentRegionLabel": "cn-zhangjiakou",
+    "oss": {
+      "reportBucket": "alinode-insight"
+    },
     "sls": {
       "pandora-exception.deploy": {
         "endpoint": "http://alinode-cloud-runtime-cn-zhangjiakou.cn-zhangjiakou.log.aliyuncs.com",
@@ -391,7 +395,7 @@
     },
     "assets": {
       "preflightPath": "//127.0.0.1:3333/",
-      "publicPath": "//127.0.0.1:3333/"
+      "publicPath": "//dev.g.alicdn.com/alinode-insight/aliyun/0.0.5/"
     },
     "loginUser": {
       "username": "admin",

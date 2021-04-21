@@ -1,5 +1,5 @@
 MyFunctionDemo:
-  Component: /Users/wangcong/Documents/workspace/fc-component/fc-alinode-atom/alinode-faas-sls-log/src/
+  Component: alinode-faas-sls-log-init
   Provider: alibaba
   AccessAlias: ''
   Properties:
@@ -7,28 +7,18 @@ MyFunctionDemo:
     Service:
       Description: 欢迎使用ServerlessTool
       InternetAccess: true
-      Role: 'acs:ram::1213677042792422:role/alinodefaasreportslsrole'
-      Name: AlinodeFaasInsightDemoService
-      Vpc:
-        SecurityGroupId: ''
-        VSwitchIds: []
-        VpcId: ''
-      Nas:
-        UserId: -1
-        GroupId: -1
-        MountPoints: []
-      Log:
-        LogStore: function-log
-        Project: aliyun-fc-cn-zhangjiakou-edb0aa80-bf48-584c-8e53-18d34610234a
     Function:
       Name: alinode_faas_insight_demo
-      Description: 这是一个Nodejs10的测试demo
+      Description: 这是alinode insight apm 平台
       CodeUri: ./
       Handler: index.handler
       MemorySize: 1024
       InstanceConcurrency: 20
       Runtime: nodejs10
       Timeout: 20
+      LoginConfig:
+        username: admin
+        password: 123
       Triggers:
         - Name: TriggerNameHttp
           Type: HTTP

@@ -1,43 +1,21 @@
 Type: Application
-Name: Alinode Faas Insight 观测性平台
+Name: alinode-faas-insight
 Provider:
   - Alibaba
 Version: 0.0.4
 Description:
-  zh: Alinode Faas Insight 观测性平台，可以对您的应用进行指标（qps、rt、errorRate）、链路、异常的监控。
-  en: English
-HomePage: 'http://xxxx'
-Tags:
-  - zh: 可观测性
-    en: Insight
-  - zh: Alinode
-    en: Alinode
-  - zh: APM
-    en: APM
+  zh: alinode insight 可观测性平台，可以监控 alinode-runtime-http 应用
+  en: alinode insight 可观测性平台，可以监控 alinode-runtime-http 应用
+HomePage: 项目首页地址
 Category: 监控告警
 Service:
-  - Name: Function
-    Runtime: nodejs10
-    Authorities:
-      - zh: 创建服务
-        en: create service
-      - zh: 创建函数
-        en: create function
-  - Name: Log service
-    Authorities:
-      - zh: 创建项目
-        en: create project
-      - zh: 创建 logstore
-        en: create logstore
-      - zh: 创建 metricstore
-        en: create metricstore
-      - zh: 创建数据加工任务
-        en: create job
+  - Name: 函数计算
+    Runtime: Node.js
 Properties:
-  function:
-    Description: ''
+  Region:
+    Description: 部署地域
     Required: true
-    Example: ''
-    Default: ''
+    Example: cn-zhangjiakou
+    Default: cn-zhangjiakou
     Type:
       - String

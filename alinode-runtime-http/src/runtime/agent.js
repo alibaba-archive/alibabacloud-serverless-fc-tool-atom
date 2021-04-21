@@ -28,7 +28,9 @@ const uploadReport = async (time, restart) => {
       stsToken: access.securityToken,
     });
     const date = new Date();
-    const fileName = `diagnostic-report/${date.getFullYear()}-${
+    const fileName = `diagnostic-report/${config.serviceName}.${
+      config.functionName
+    }/${date.getFullYear()}-${
       date.getMonth() + 1
     }-${date.getDate()}/report-${date.getHours()}-${date.getMinutes()}-${date.getTime()}.json`;
     await ossClient.put(fileName, reportPath);

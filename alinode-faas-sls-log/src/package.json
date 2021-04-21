@@ -1,5 +1,5 @@
 {
-  "name": "ServerlessComponent",
+  "name": "alinode-faas-sls-log-init",
   "version": "0.0.1",
   "dependencies": {
     "@alicloud/log": "^1.2.1",
