@@ -1,103 +1,51 @@
-# 应用开发指南
+# Alinode Insight，快速部署一个 Nodejs http 函数监控平台
 
-## 前言
+## 简介
 
-感谢您有想法为Serverless Devs Tool贡献一份力量。
+使用此应用，您可以快速部署一个 apm 平台到阿里云计算，对 alinode-runtime-http 部署的函数进行监控；
+在部署了 Alinode Insight 应用后，您将可以监控您的 http 类型函数（必须使用 `alinode-runtime-http` 部署的函数）；
+Alinode Insight 采用了 [OpenTelemetry](https://opentelemetry.io/) 的数据模型的自定义集合，可以很方便地将 OpenTelemetry 数据导出为 Alinode Insight 格式。
+Alinode Insight 为您提供指标、链路、异常三个维度的监控；同时提供了崩溃诊断的功能，方便您对函数的异常退出进行问题定位。
 
-Serverless目前被很多人炒的火热，但是实际上Serverless仍然算是一个"萌新"，厂商高度绑定、没有合适的开发工具......很多问题，让很多接触Serverless的开发者望而生畏，为了缓解这个尴尬的局面，Serverless Devs社区立志做一款社区驱动，完全开源开放的Serverless工具类产品，并且希望可以根据这个工具，可以拓展其生态，可以为广大的开发者提供更多的学习资源、案例资源以及最佳实践等。
+## 注意事项
 
-为了更加开放，为了Serverless，我们推出了应用中心这个产品，您可以将您的应用，包，插件分享给更多平台上的用户，同时，我们也非常感谢您为Serverless做的一起贡献，和我们一起Serverless，让我们每个人都是Serverless的贡献者、推动者，Serverless将会因为您的贡献而变得更加美好。
+1. 由于 Alinode Insight 使用了 sls 作为底层存储，请确保您使用的主账号开通了对应地域的 `sls` 服务，以及 `sls` 的 `数据加工`、`时序存储metrcstore`功能。Alinode Insight 在部署的时候，将自动为您创建对应的底层存储。
+2. 如果您想使用崩溃诊断功能，请确保您使用的主账号开通了对应地域的 `oss` 服务，因为 Alinode Insight 中，诊断报告需要上传到 `oss` 中。同时需要您手动创建 `alinode-insight-{region}` bucket 供 Alinode Insight 使用。否则，可能会出现无法获取诊断报告的情况。
+3. 自定义域名绑定，由于 fc http 触发器函数不能直接通过浏览器访问，需要绑定自定义域名才可以，详情参考[fc 文档](https://help.aliyun.com/document_detail/90763.html)
+4. 确保您部署时使用的账号是主账号，有创建 ram 角色和授权策略的权限。Alinode Insight 会创建 ram 角色来向 1、2 点中提到的 sls 投递数据、向 oss 中上报和读取崩溃报告。Alinode Insight 所使用的角色、权限、数据存储都在您自己的账号中，您可以随时查看授权和数据使用情况，最大程度避免您的数据泄露。
+5. Alinode Insight 集成了账号密码登录功能，来提高您的 apm 平台的访问安全性，您可以在 `template.yaml` 中配置您的登录名和密码。
 
-## 开发规范
+## 部署方式
 
-以下开发规范仅是测试版的规范（但是之后的规范会兼容这套规范），规范会在后期不断完善，也期待您可以给我们更多的意见、建议。
+您可以直接在 serverless devs gui 界面中点击快速部署，部署您的应用
+您也可以使用 `@serverless-devs/s` 命令行工具，通过 `s init alinode-faas-insight` 来初始化您的应用，再在项目目录下通过 `s deploy` 部署您的应用（部署前请参照 `template.yaml` 中的示例值自行填写您要部署到的 service，并且根据您的需要修改 function name 和 登录配置 LoginConfig）
 
-项目目录必须遵守以下格式：
+## 功能概述
 
-```
-|- src
-|   └── 项目代码   
-|- publish.yaml: 项目的资源描述   
-|- readme.md: 项目简介   
-```
+### 指标监控
 
-#### publish.yaml
+![指标监控](https://img.alicdn.com/imgextra/i3/O1CN01qSyNF723JDoMVu9dL_!!6000000007234-2-tps-1742-1327.png)
 
-这个文件时项目的描述文档。系统将会在您发布资源的时候，读取该文档并且进行相关信息的录入，请您务必认真填写。
+在首页，将会展示 qps、rt、错误率的趋势，以及 nodejs 堆信息等信息，对于趋势图，默认的采样间隔是 60s 即一分钟；为保证查询性能及数据曲线的美观性，当您查看更长时间范围的指标数据时，默认的采样间隔会相应的变长，3 小时以内时间返回内的采样间隔为 60s；3 小时到 6 小时范围的采样间隔为 600s；6 小时到 12 小时范围的采样间隔为 900s；12 小时到 24 小时范围的采样间隔为 1800s；24 小时到 48 小时范围的采样间隔为 3600s 即一小时。
 
-```yaml
-Type: Application
-Name: 名称
-Provider:
-  - 云厂商名称 # Alibaba/Baidu/Huawei/AWS/Google Cloud/Azure/Vercel/Tencent
-Version: 版本，例如0.0.1
-Description: 
-  zh: 简短的描述/介绍
-  en: English
-HomePage: 项目首页地址
-Tags: #标签详情
-  - zh: 部署函数
-    en: English
-Category: 分类 # 基础云服务/Web框架/Web应用/人工智能/音视频处理/图文处理/监控告警/大数据/IoT/新手入门/其他
-Service: # 使用的服务
-  - Name: 服务名 # 函数计算/容器服务/镜像服务/消息队列/工作流/CDN/对象存储/表格存储/MNS/日志服务/API网关/数据库/解析服务/云应用/其他
-    # Runtime: Python 3.6 如果服务是函数，还需要增加Runtime
-    Authorities: #权限权限
-      - zh: 创建函数 # 所需要的权限
-        en: English
-```
+### 链路分析
 
-部分参数取值范围：
+![链路总览](https://img.alicdn.com/imgextra/i2/O1CN011IgJ0d1GUIDJmLqm4_!!6000000000625-2-tps-1736-1038.png)
+![链路跟踪](https://img.alicdn.com/imgextra/i3/O1CN01fMrEjW1ZlDYDDQ89u_!!6000000003234-2-tps-1743-1170.png)
 
-* 云厂商：
-    ```Alibaba, Baidu, Huawei, Tencent, AWS, Google, Azure, Vercel, Other```
-    
-* 分类：
-    ```基础云服务, Web框架, 全栈应用, 人工智能, 音视频处理, 图文处理, 监控告警, 大数据, IoT, 新手入门, 其他```
-    
-* 云厂商：
-    ```函数计算, 容器服务, 镜像服务, 消息队列, 工作流, CDN, 对象存储, 表格存储, MNS, 日志服务, API网关, 数据库, 解析服务, 云应用, 其他```
-    
-* 运行时：
-    ```Node.JS 12, Node.JS 10, Node.JS 8, Node.JS 6, Python3, Python2, PHP7, PHP5, MNS, Java8, Go, Other```
+链路分析分为`链路总览`和`链路跟踪`两部分
+其中，链路总览列出了调用的下游链路的拓补图（目前只能采集到下游 http 调用），同时展示了不同下游 qps、rt、错误率趋势的对比。
+链路跟踪部分，列出了具体调用链路的情况，包括具体的请求快照信息。
 
-#### readme.md
+### 异常分析
 
-这个文件是项目的简介，您可以通过这部分，为您的项目写一份完整的描述文档，这样大家在使用您的项目的时候，才可以更加简单，轻松快速的用的起来。
+![异常分析](https://img.alicdn.com/imgextra/i4/O1CN01gxvBgd1f1JY3OYblT_!!6000000003946-2-tps-1742-1325.png)
 
+异常分析中，捕获了您代码中 `console.error` 的调用，以及尝试捕获了 `throw Error` 的情况（可能导致进程退出而无法获取上报信息）。您在异常分析中可以查看错误信息以及堆栈信息。
 
-## 应用开发
+### 诊断
 
-本例子仅是一个开发样例，尽可能的为您描述清楚每个开发细节。如果有任何问题可以随时和我取得联系（Wechat：anycodes_02）
+![诊断报告](https://img.alicdn.com/imgextra/i4/O1CN01FzD5E92A9KZI5QnKe_!!6000000008160-2-tps-1741-1167.png)
 
-### 创建项目
-
-在控制台执行：`s platform init -t application`，即可创建一个Application模板：
-
-### 编写项目
-
-在`src`目录下，编写您的应用。例如一个音视频处理的例子，一个hello world的例子等。
-
-其实应用更多来说就是一个写好的项目，您可以通过代码+Yaml的方法，将他打包分享给别人，而分享方法则可以通过Serverless Devs App Store来实现。
-
-> 这里要额外说明，大家在发布自己的`component`的时候（即执行`s platform publish`的时候），系统会打包`src`目录下的所有文件，并且上传到服务端。所以这个目录下请勿放敏感信息和数据。
-
-### 测试项目
-
-项目测试方法很简单，只需要在`src`目录下执行`template.yaml`中的指令即可。例如样例中，使用的阿里云函数计算组件，则此时执行`s deploy`等方法可以正常部署即可。
-
-## 额外说明
-
-* 包类型+包名称+云厂商+版本 是包的唯一标识，全局唯一不可重复；
-* 您一但共享包，将代表着可以被其他人下载，使用。如果您不想被其他人使用，或者共享的包内有敏感信息，请您及时删除包版本等；
-* 包所属人是该包第一个发布者，包发布者发布包之后，该包将会和该开发者的账号体系绑定，只有该用户可删除、升级该包，除非该开发者删除掉该包所有版本；
-* 包发布者每个版本仅可以发布一次，包一旦发布，不支持修改，如果需要修改，请升级包版本；
-* 包如果发布失败，您可以重新发布包，无需升级版本信息；
-* 以上额外说明可能会在后续系统升级时进行修改、更正，您可以及时关注Serverless Devs官网，恕不另行通知；
-
-## 联系方式
-
-
-项目官网：`serverless.cn`，
-    
-邮箱地址：`service@serverlessfans.com` 
+在 调试/诊断 中，提供了诊断报告分析的能力，在您的 `alinode-runtime-http` 函数中，一旦由于未捕获的异常导致进程退出，我们将会生成一份诊断报告上传的 oss 中，并且在此页面为您呈现。
+调试功能目前还在开发中，后续将提供在线远程调试的功能，敬请期待。
